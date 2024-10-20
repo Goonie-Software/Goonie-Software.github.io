@@ -67,6 +67,14 @@ header {
     padding: 4px;
 }
 
+.social ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.social {
+    display: inline-block;
+}
+
 .center {
     text-align: center;
 }
@@ -82,10 +90,13 @@ header {
 }
 
 .hover-image {
-    border: 8px solid transparent; /* Initially, no border is visible */
-    transition: border 0.3s ease; /* Smooth transition effect */
-  }
-  
-  a:hover .hover-image {
-    border: 8px solid cornflowerblue; /* Highlight border on hover (e.g., yellow) */
-  }
+    border: 8px solid transparent;
+    /* Initially, no border is visible */
+    transition: border 0.3s ease;
+    /* Smooth transition effect */
+}
+
+a:hover .hover-image {
+    border: 8px solid cornflowerblue;
+    /* Highlight border on hover (e.g., yellow) */
+}
