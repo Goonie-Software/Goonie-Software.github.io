@@ -17,20 +17,26 @@ body {
 
 a {
     text-decoration: none;
+    font-weight: bold;
+    color: darkgray;
 }
 
 a:link,
 a:visited {
     text-decoration: none;
+    color: white;
 }
 
 a:hover,
 a:active {
     text-decoration: underline;
+    font-weight: bold;
+    color: white;
     /* Keeps the underline when hovering or when the link is active */
 }
 
 nav {
+    font-family: 'Goonies', sans-serif;
     border-bottom: 1px solid darkgrey;
     padding-left: 4px;
     padding-right: 4px;
