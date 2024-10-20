@@ -31,7 +31,9 @@ a:active {
 }
 
 nav {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid darkgrey;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 header {
