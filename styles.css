@@ -58,7 +58,7 @@ header {
 
 .crumb a::after {
     display: inline-block;
-    color: #000;
+    color: cornflowerblue;
     content: '>';
     font-size: 80%;
     font-weight: bold;
