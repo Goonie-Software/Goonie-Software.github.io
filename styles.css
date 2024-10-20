@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     background-color: black;
     color: grey;
@@ -72,4 +73,10 @@ header {
 
 .goonie {
     font-family: 'Goonies', sans-serif;
+}
+
+.logo {
+    font-family: 'Goonies', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
