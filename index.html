@@ -2,6 +2,7 @@
 
 <head>
 	<title>Goonie Software</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<style>
 		body {
 			background-color: black;
@@ -12,6 +13,21 @@
 			/* Remove default body margin */
 			padding: 0;
 			/* Remove default body padding */
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:link,
+		a:visited {
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:active {
+			text-decoration: underline;
+			/* Keeps the underline when hovering or when the link is active */
 		}
 
 		nav {
@@ -35,6 +51,15 @@
 			font-weight: bold;
 			padding: 0 3px;
 		}
+
+		.center {
+			text-align: center;
+		}
+
+		header {
+			font-size: 24px;
+			color: #fff;
+		}
 	</style>
 </head>
 
@@ -44,11 +69,13 @@
 			<li class="crumb"><a href="#">Home</a></li>
 		</ol>
 	</nav>
-	<header>Goonie Software</header>
-	<main>
-		<p>Goonie Software is an independant games studio based within the United States.</p>
-		<p>Our goal is make fun games first</p>
-	</main>
+	<div class="center">
+		<header>Goonie Software</header>
+		<main>
+			<p>Goonie Software is an independant games studio based within the United States.</p>
+			<p>Our goal is make fun games first</p>
+		</main>
+	</div>
 </body>
 
 </html>
