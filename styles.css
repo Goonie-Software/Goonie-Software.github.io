@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: grey;
+    font-family: Arial, sans-serif;
+    /* Optional: Set a default font */
+    margin: 0;
+    /* Remove default body margin */
+    padding: 0;
+    /* Remove default body padding */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    /* Keeps the underline when hovering or when the link is active */
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+header {
+    font-size: 24px;
+    color: #fff;
+}
