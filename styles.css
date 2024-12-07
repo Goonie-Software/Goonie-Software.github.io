@@ -79,6 +79,14 @@ header {
     text-align: center;
 }
 
+.left {
+    text-align:left;
+}
+
+.right {
+    text-align: right;
+}
+
 .goonie {
     font-family: 'Goonies', sans-serif;
 }
