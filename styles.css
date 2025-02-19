@@ -16,6 +16,11 @@ body {
     /* Remove default body padding */
 }
 
+main {
+    max-width: 800px;
+    margin:auto;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
@@ -41,30 +46,7 @@ header {
     color: #fff;
 }
 
-/* nav {
-    font-family: 'Goonies', sans-serif;
-    border-bottom: 1px solid darkgrey;
-    padding-left: 4px;
-    padding-right: 4px;
-}*/
 
-/* .crumbs ol {
-    list-style-type: none;
-    padding-left: 0;
-} */
-
-/* .crumb {
-    display: inline-block;
-} */
-
-/* .crumb a::after {
-    display: inline-block;
-    color: cornflowerblue;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 4px;
-}  */
 /* Add some basic styling for the navigation bar and submenus */
 nav.crumbs {
     background-color: #333;
