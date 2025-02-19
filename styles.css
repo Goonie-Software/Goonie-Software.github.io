@@ -36,41 +36,101 @@ a:active {
     /* Keeps the underline when hovering or when the link is active */
 }
 
-nav {
-    font-family: 'Goonies', sans-serif;
-    border-bottom: 1px solid darkgrey;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
 header {
     font-size: 24px;
     color: #fff;
 }
 
-.crumbs ol {
+/* nav {
+    font-family: 'Goonies', sans-serif;
+    border-bottom: 1px solid darkgrey;
+    padding-left: 4px;
+    padding-right: 4px;
+}*/
+
+/* .crumbs ol {
     list-style-type: none;
     padding-left: 0;
-}
+} */
 
-.crumb {
+/* .crumb {
     display: inline-block;
-}
+} */
 
-.crumb a::after {
+/* .crumb a::after {
     display: inline-block;
     color: cornflowerblue;
     content: '>';
     font-size: 80%;
     font-weight: bold;
-    /* padding: 0 3px; */
     padding: 4px;
+}  */
+/* Add some basic styling for the navigation bar and submenus */
+nav.crumbs {
+    background-color: #333;
+    overflow: hidden;
 }
+
+nav.crumbs img {
+    float: left;
+    padding: 14px 16px;
+}
+
+nav.crumbs ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.crumbs li {
+    float: left;
+}
+
+nav.crumbs li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav.crumbs li a:hover {
+    background-color: #111;
+}
+
+nav.crumbs li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0; 
+    z-index: 1;
+}
+
+nav.crumbs li:hover ul {
+    display: block;
+}
+
+nav.crumbs li ul li {
+    float: none;
+}
+
+nav.crumbs li ul li a {
+    padding: 12px 16px;
+}
+
+.active {
+    background-color: #000;
+}
+
 
 .social ul {
     list-style-type: none;
     padding-left: 0;
 }
+
 .social {
     display: inline-block;
 }
@@ -80,7 +140,7 @@ header {
 }
 
 .left {
-    text-align:left;
+    text-align: left;
 }
 
 .right {
