@@ -16,7 +16,7 @@ body {
     /* Remove default body padding */
 }
 
-main {
+.main {
     max-width: 800px;
     margin:auto;
 }
