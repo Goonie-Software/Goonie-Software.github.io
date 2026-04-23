@@ -6,6 +6,9 @@
   <div id="output"></div>
   <input id="input" placeholder="Enter command..." />
   <button onclick="send()">Send</button>
+  <button onclick="send('attack')">Attack</button>
+  <button onclick="send('inventory')">Inventory</button>
+  <button onclick="send('status')">Status</button>
 
   <script src="wasm_exec.js"></script>
   <script>
@@ -22,6 +25,7 @@
       output.innerHTML += "<p>> " + input + "</p>";
       output.innerHTML += "<p>" + result + "</p>";
     }
+
   </script>
 </body>
 </html>
