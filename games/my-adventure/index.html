@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Text Adventure</h2>
+
+  <div id="output"></div>
+  <input id="input" placeholder="Enter command..." />
+  <button onclick="send()">Send</button>
+
+  <script src="wasm_exec.js"></script>
+  <script>
+    const go = new Go();
+
+    WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject)
+      .then(result => go.run(result.instance));
+
+    function send() {
+      const input = document.getElementById("input").value;
+      const result = window.gameCommand(input);
+
+      const output = document.getElementById("output");
+      output.innerHTML += "<p>> " + input + "</p>";
+      output.innerHTML += "<p>" + result + "</p>";
+    }
+  </script>
+</body>
+</html>
