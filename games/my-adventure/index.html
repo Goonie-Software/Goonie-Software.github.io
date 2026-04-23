@@ -26,6 +26,14 @@
       output.innerHTML += "<p>" + result + "</p>";
     }
 
+    function cmd(input) {
+      const result = window.gameCommand(input);
+
+      const output = document.getElementById("output");
+      output.innerHTML += "<p>> " + input + "</p>";
+      output.innerHTML += "<p>" + result + "</p>";
+    }
+
   </script>
 </body>
 </html>
