@@ -6,10 +6,22 @@
   <div id="output"></div>
   <input id="input" placeholder="Enter command..." />
   <button onclick="send()">Send</button>
-  <button onclick="cmd('attack')">Attack</button>
   <button onclick="cmd('inventory')">Inventory</button>
   <button onclick="cmd('status')">Status</button>
   <button onclick="cmd('look')">Look</button>
+  <div>
+    <button onclick="cmd('start')">Start Combat</button>
+    <button onclick="cmd('attack')">Attack</button>
+    <button onclick="cmd('defend')">Defend</button>
+    <button onclick="cmd('poison')">Poison</button>
+    <button onclick="cmd('next')">Next Turn</button>
+  </div>
+  <div>
+    <button onclick="cmd('go north')">Go North</button>
+    <button onclick="cmd('go south')">Go South</button>
+    <button onclick="cmd('go east')">Go East</button>
+    <button onclick="cmd('go west')">Go West</button>
+  </div>
 
   <script src="wasm_exec.js"></script>
   <script>
