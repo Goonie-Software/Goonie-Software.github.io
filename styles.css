@@ -460,6 +460,27 @@ figure {
   margin-bottom: 1.5rem;
 }
 
+.software-featured {
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 800px) {
+  .featured-grid-reverse {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  }
+
+  .featured-grid-reverse .featured-copy {
+    order: -1;
+  }
+}
+
+.featured-art-shot img {
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #050506;
+  border: 1px solid var(--line);
+}
+
 /* —— Inner pages —— */
 .page-hero {
   padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(1.5rem, 3vw, 2rem);
@@ -545,6 +566,60 @@ figure {
 
 .game-link:hover figcaption {
   color: var(--brass-hot);
+}
+
+/* —— Software catalog —— */
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.5rem;
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.software-link {
+  display: block;
+  color: inherit;
+  outline-offset: 4px;
+}
+
+.software-link img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #050506;
+  border: 1px solid var(--line);
+  transition: transform 0.5s var(--ease), opacity 0.3s;
+}
+
+.software-link:hover img,
+.software-link:focus-visible img {
+  transform: scale(1.02);
+  opacity: 0.92;
+}
+
+.software-link figcaption {
+  margin-top: 0.85rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.software-link:hover figcaption {
+  color: var(--brass-hot);
+}
+
+.tool-shot {
+  margin: 0 auto;
+  max-width: 420px;
+}
+
+.tool-shot img {
+  width: 100%;
+  background: #050506;
+  border: 1px solid var(--line);
 }
 
 /* —— Contact —— */

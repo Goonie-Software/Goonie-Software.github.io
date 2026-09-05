@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Games — Goonie Software</title>
-  <meta name="description" content="Games from Goonie Software, including Lifter on Steam.">
+  <title>steamdb — Goonie Software</title>
+  <meta name="description" content="steamdb is a terminal CLI that looks up Steam games and charts concurrent players over time.">
   <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,13 +30,13 @@
     <nav class="site-nav" id="site-nav">
       <a href="/">Home</a>
       <div class="nav-dropdown">
-        <a href="/games" aria-current="page">Games</a>
+        <a href="/games">Games</a>
         <ul>
           <li><a href="/games/lifter">Lifter</a></li>
         </ul>
       </div>
       <div class="nav-dropdown">
-        <a href="/software">Software</a>
+        <a href="/software" aria-current="page">Software</a>
         <ul>
           <li><a href="/software/steamdb">steamdb</a></li>
         </ul>
@@ -46,21 +46,34 @@
     </nav>
   </header>
 
-  <div class="page-hero">
-    <div class="page">
-      <h1>Games</h1>
-      <p>Our catalog — starting with Lifter.</p>
-    </div>
-  </div>
-
   <main class="page">
-    <div class="games-grid">
-      <a class="game-link" href="/games/lifter">
-        <figure>
-          <img src="/games/imgs/Lifter_Game_Art_AD.png" alt="Lifter" width="1024" height="1024">
-          <figcaption>Lifter</figcaption>
-        </figure>
-      </a>
+    <div class="game-layout">
+      <figure class="tool-shot">
+        <img src="/software/steamdb/imgs/Screenshot.png" alt="steamdb ASCII player chart in the terminal" width="634" height="532">
+      </figure>
+
+      <article class="game-body">
+        <span class="section-label">CLI Tool</span>
+        <h1>steamdb</h1>
+        <p>
+          A terminal CLI that looks up Steam games by name and draws an ASCII chart of
+          concurrent players over time. Search the Steam Store, read the live player count,
+          and plot history from SteamCharts — no API key required.
+        </p>
+
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>Search Steam by game name or jump straight to an AppID.</li>
+          <li>Live concurrent player counts from Steam’s Web API.</li>
+          <li>History windows from 24 hours to all-time, rendered as a Braille graph.</li>
+          <li>Optional color, legend, and non-interactive pick flags for scripting.</li>
+        </ul>
+
+        <div class="cta-row start steam-cta">
+          <a class="btn btn-primary" href="https://github.com/Goonie-Software/steamdb">View on GitHub</a>
+          <a class="btn btn-ghost" href="/software">All Software</a>
+        </div>
+      </article>
     </div>
   </main>
 
