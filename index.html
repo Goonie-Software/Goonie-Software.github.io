@@ -1,59 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Goonie Software</title>
-	<link rel="icon" href="/favicon.ico">
-	<link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goonie Software — Games Studio</title>
+  <meta name="description" content="Goonie Software is an independent games studio making fun, memorable games.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6JW04E43S');
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D6JW04E43S');
-</script>
 <body>
-	<nav class="crumbs">
-		<img src="./imgs/SkullAndCrossBonesLogo.png" alt="Goonie Software" style="display: inline-block; vertical-align: middle; height:15px; background: #000;" />
-		<ol style="display: inline-block; vertical-align: middle;">
-            <li class="crumb active"><a href="/">Home</a></li>
-            <li class="crumb">
-                <a href="/games">Games</a>
-                <ul>
-                    <li><a href="/games/lifter">Lifter</a></li>
-                </ul>
-            </li>
-            <li class="crumb"><a href="/about">About</a></li>
-            <li class="crumb"><a href="/contact">Contact</a></li>
-        </ol>
+  <header class="site-header">
+    <a class="site-logo" href="/">
+      <img src="/imgs/SkullAndCrossBonesLogo.png" alt="" width="28" height="28">
+      <span>Goonie Software</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/" aria-current="page">Home</a>
+      <div class="nav-dropdown">
+        <a href="/games">Games</a>
+        <ul>
+          <li><a href="/games/lifter">Lifter</a></li>
+        </ul>
+      </div>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
     </nav>
-	<div class="center">
-		<header>
-			<img src="./imgs/logo.png" alt="Goonie Software" /> <br/>
-			<img src="./imgs/SkullAndCrossBonesLogo.png" alt="Skull And Crossbones" width="250"/>
-		</header>
-		<main>
-			<section id="welcome">
-				<h1>Welcome to Goonie Software</h1>
-				<p>Goonie Software is an independant games studio based within the United States. Our goal is make fun games first</p>
-			</section>
-			<br />
-			<br />
-			<p>For <a href="https://discord.com/channels/1297564337027682326/1341812134526320691">News</a> Related to Goonie Software and Our Games, Join our Discord Server</p>
-			<div class="social">
-				<ul>
-					<li>
-						<a href="https://discord.gg/bT77wewvy4">
-							<img src="./imgs/discord-mark-white.png" alt="discord" height="24px" width="32px"/>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</main>
-	</div>
-</body>
+  </header>
 
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <img class="hero-brand" src="/imgs/logo.png" alt="Goonie Software" width="280" height="92">
+      <h1 class="hero-title">Independent games studio</h1>
+      <p class="hero-lede">We make fun games first — crafted with care for players who want something a little different.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/games">View Games</a>
+        <a class="btn btn-ghost" href="https://discord.gg/bT77wewvy4">
+          <img src="/imgs/discord-mark-white.png" alt="" width="18" height="14">
+          Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured">
+    <div class="page featured-grid">
+      <div class="featured-art">
+        <a href="/games/lifter">
+          <img src="/games/imgs/Lifter_Game_Art_AD.png" alt="Lifter game art" width="1024" height="1024">
+        </a>
+      </div>
+      <div class="featured-copy">
+        <span class="section-label">Featured</span>
+        <h2>Lifter</h2>
+        <p>An adventure RPG about a cunning thief racing the clock to save their home — blending stealth, gadgets, and choices that matter.</p>
+        <div class="cta-row start">
+          <a class="btn btn-primary" href="/games/lifter">Learn More</a>
+          <a class="btn btn-ghost" href="https://store.steampowered.com/app/3392730/Lifter/">Get on Steam</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <ul class="social">
+      <li>
+        <a href="https://discord.gg/bT77wewvy4" aria-label="Discord">
+          <img src="/imgs/discord-mark-white.png" alt="" width="24" height="18">
+        </a>
+      </li>
+    </ul>
+    <p>&copy; Goonie Software. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      var toggle = document.querySelector('.nav-toggle');
+      if (!header || !toggle) return;
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
 </html>

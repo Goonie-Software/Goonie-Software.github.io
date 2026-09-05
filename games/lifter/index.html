@@ -1,63 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Lifter</title>
-	<link rel="icon" href="/favicon.ico">
-	<link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifter — Goonie Software</title>
+  <meta name="description" content="Lifter is an adventure RPG about a cunning thief racing to save their home. Available on Steam.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6JW04E43S');
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D6JW04E43S');
-</script>
 <body>
-	<nav class="crumbs">
-        <a href="/"><img src="/imgs/SkullAndCrossBonesLogo.png" alt="Goonie Software" style="display: inline-block; vertical-align: middle; height:15px; background: #000;" /></a>
-		<ol style="display: inline-block; vertical-align: middle;">
-			<li class="crumb active"><a href="#">About</a></li>
-		</ol>
-	</nav>
-	<div class="center">
-		<main>
-            <br/>
-            <div style="border: 8px solid darkgrey; width: 40%; margin:auto; padding:5px;">
-                <h2 class="goonie">The Game</h2>
-                <img src="./imgs/LifterBanner_Steam_Verticle.png" alt="Lifter" width="100%">
-                <p>
-                    Lifter is a project I have been thinking about creating for awhile now. 
-                    It touches a bit on my child hood with some of the crazy things my friends 
-                    and I use to do. Some of the inspiration was taken from a game an old friend 
-                    made in pascal. My hope is I can provide the same enjoyment I got out of the 
-                    original game with a more modern touch. 
-                </p>
-                <a href="https://store.steampowered.com/app/3392730/Lifter/">Get it on Steam</a>
-                <h3> Description </h3>
-                <p>
-                    In Lifter, you step into the shoes of a cunning yet kind-hearted thief trying to save their home from the brink of eviction. Set in a sprawling world teeming with secrets, this Adventure RPG weaves a tale of desperation, cleverness, and moral choices.
-                </p>
-                <p>
-                    Every job presents unique challenges, requiring a mix of stealth, agility, and wit. Unlock gadgets and skills to outsmart store employees, disable security, and disappear into the shadows. 
-                </p>
-                <p>
-                    As time ticks down toward your eviction date, the pressure mounts. Will you pay off your debts honorably, or will your actions create consequences you can’t outrun? In Lifter, survival isn't just about what you steal—it's about what you stand for.
-                </p>
-                <div class="left">
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>Dynamic Heist Mechanics: Plan and execute heists using a mix of stealth, strategy, and environmental puzzles.</li>
-                        <li>Moral Choices: Decide who to rob and how far you're willing to go, with your decisions shaping the city and your character's story.</li>
-                        <li>Rich World-Building: Explore a vibrant world filled with colorful NPCs, hidden paths.</li>
-                        <li>Customizable Playstyle: Upgrade your  tools to match your unique approach to thievery.</li>
-                        <li>Will you become the legend who stole back their future, or will the world swallow you whole? The choice is yours in Lifter.</li>
-                    </p>
-                </div>
-            </div>
-		</main>
-	</div>
-</body>
+  <header class="site-header">
+    <a class="site-logo" href="/">
+      <img src="/imgs/SkullAndCrossBonesLogo.png" alt="" width="28" height="28">
+      <span>Goonie Software</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <a href="/games" aria-current="page">Games</a>
+        <ul>
+          <li><a href="/games/lifter">Lifter</a></li>
+        </ul>
+      </div>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
 
+  <main class="page">
+    <div class="game-layout">
+      <figure class="game-poster">
+        <img src="/games/lifter/imgs/LifterBanner_Steam_Verticle.png" alt="Lifter cover art" width="748" height="896">
+      </figure>
+
+      <article class="game-body">
+        <span class="section-label">Adventure RPG</span>
+        <h1 class="goonie">Lifter</h1>
+        <p>
+          In Lifter, you step into the shoes of a cunning yet kind-hearted thief trying to save
+          their home from eviction. Set in a sprawling world teeming with secrets, this adventure
+          RPG weaves a tale of desperation, cleverness, and moral choices.
+        </p>
+        <p>
+          Every job presents unique challenges — stealth, agility, and wit. Unlock gadgets and
+          skills to outsmart store employees, disable security, and disappear into the shadows.
+          As the eviction date approaches, the pressure mounts. Survival isn’t just about what
+          you steal — it’s about what you stand for.
+        </p>
+
+        <h2>Key features</h2>
+        <ul class="feature-list">
+          <li>Dynamic heist mechanics — plan and execute jobs with stealth, strategy, and environmental puzzles.</li>
+          <li>Moral choices that shape the city and your character’s story.</li>
+          <li>A vibrant world with colorful NPCs and hidden paths.</li>
+          <li>Customizable tools and playstyles for your approach to thievery.</li>
+        </ul>
+
+        <p>
+          Will you become the legend who stole back their future, or will the world swallow you
+          whole? The choice is yours in Lifter.
+        </p>
+
+        <div class="cta-row start steam-cta">
+          <a class="btn btn-primary" href="https://store.steampowered.com/app/3392730/Lifter/">Get it on Steam</a>
+          <a class="btn btn-ghost" href="https://discord.gg/bT77wewvy4">Join Discord</a>
+        </div>
+
+        <h2>Behind the game</h2>
+        <p>
+          Lifter draws on childhood mischief and the spirit of an old Pascal game a friend once
+          made. The goal is the same enjoyment — with a modern touch.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="social">
+      <li>
+        <a href="https://discord.gg/bT77wewvy4" aria-label="Discord">
+          <img src="/imgs/discord-mark-white.png" alt="" width="24" height="18">
+        </a>
+      </li>
+    </ul>
+    <p>&copy; Goonie Software. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      var toggle = document.querySelector('.nav-toggle');
+      if (!header || !toggle) return;
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
 </html>

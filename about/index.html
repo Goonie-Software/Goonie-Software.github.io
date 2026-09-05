@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Goonie Software > About</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Goonie Software</title>
+  <meta name="description" content="Learn about Goonie Software, an independent games studio based in the United States.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6JW04E43S');
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D6JW04E43S');
-</script>
 <body>
-    <nav class="crumbs">
-        <img src="/imgs/SkullAndCrossBonesLogo.png" alt="Goonie Software"
-            style="display: inline-block; vertical-align: middle; height:15px; background: #000;" />
-        <ol style="display: inline-block; vertical-align: middle;">
-            <li class="crumb"><a href="/">Home</a></li>
-            <li class="crumb">
-                <a href="/games">Games</a>
-                <ul>
-                    <li><a href="/games/lifter">Lifter</a></li>
-                </ul>
-            </li>
-            <li class="crumb active"><a href="/about">About</a></li>
-            <li class="crumb"><a href="/contact">Contact</a></li>
-        </ol>
+  <header class="site-header">
+    <a class="site-logo" href="/">
+      <img src="/imgs/SkullAndCrossBonesLogo.png" alt="" width="28" height="28">
+      <span>Goonie Software</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <a href="/games">Games</a>
+        <ul>
+          <li><a href="/games/lifter">Lifter</a></li>
+        </ul>
+      </div>
+      <a href="/about" aria-current="page">About</a>
+      <a href="/contact">Contact</a>
     </nav>
-    <div class="center">
-        <header>
-            <img src="/imgs/logo.png" alt="Goonie Software" /> <br />
-            <img src="/imgs/SkullAndCrossBonesLogo.png" alt="Skull And Crossbones" width="250" />
-        </header>
-        <main class="main">
-            <p>Goonie Software is an independant games studio based within the United States.</p>
-            <p>Our goal is make fun games first</p>
-            <br />
-            <br />
-            <h1>About Goonie Software</h1>
-            <p>
-                Welcome to Goonie Software, an independent game studio dedicated to creating unique and engaging gaming
-                experiences.
-                Our team is passionate about developing games that captivate players and provide endless hours of
-                entertainment.
-            </p>
+  </header>
 
-            <h2>Our Mission</h2>
-
-            <p>
-                At Goonie Software, our mission is to push the boundaries of creativity and innovation in the gaming
-                industry.
-                We strive to deliver high-quality games that not only entertain but also inspire and challenge our
-                players.
-            </p>
-
-            <h2>Our Games</h2>
-
-            <p>
-                We take pride in our portfolio of games, each crafted with care and attention to detail.
-                From action-packed adventures to thought-provoking puzzles, our games are designed to appeal to a wide
-                range of audiences.
-            </p>
-
-            <h2>Join Us</h2>
-
-            <p>
-                We believe in the power of community and invite you to join us on our journey. Follow us on social
-                media,
-                join our <a href="https://discord.gg/bT77wewvy4">Discord server</a>, and stay updated with the latest news and releases from Goonie Software.
-            </p>
-            <br />
-            <p>
-                Thank you for your support, and we look forward to sharing our games with you!
-            </p>
-
-            <h2>Contact Us</h2>
-            <p>For any inquiries or feedback, please feel free to reach out to us through our <a
-                    href="/contact">Contact</a> page.</p>
-        </main>
+  <div class="page-hero">
+    <div class="page-narrow">
+      <img
+        class="page-hero-mark"
+        src="/imgs/SkullAndCrossBonesLogo.png"
+        alt="Goonie Software skull and crossbones"
+        width="220"
+        height="220"
+      >
+      <h1>About</h1>
+      <p>An independent games studio based in the United States.</p>
     </div>
-</body>
+  </div>
 
+  <main class="content">
+    <div class="page-narrow prose">
+      <h2>Who we are</h2>
+      <p>
+        Goonie Software builds games that put fun first. We care about memorable worlds,
+        clever systems, and experiences players want to come back to.
+      </p>
+
+      <h2>Our approach</h2>
+      <p>
+        We keep the bar high on craft while staying true to an indie spirit — distinctive
+        ideas, honest storytelling, and gameplay that rewards curiosity.
+      </p>
+
+      <h2>Community</h2>
+      <p>
+        Development is better with players in the loop. Join our
+        <a href="https://discord.gg/bT77wewvy4">Discord</a> for news, updates, and conversation
+        around our games.
+      </p>
+
+      <h2>Get in touch</h2>
+      <p>
+        Questions or feedback? Reach us on the <a href="/contact">Contact</a> page.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="social">
+      <li>
+        <a href="https://discord.gg/bT77wewvy4" aria-label="Discord">
+          <img src="/imgs/discord-mark-white.png" alt="" width="24" height="18">
+        </a>
+      </li>
+    </ul>
+    <p>&copy; Goonie Software. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      var toggle = document.querySelector('.nav-toggle');
+      if (!header || !toggle) return;
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
 </html>

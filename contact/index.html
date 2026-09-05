@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Goonie Software > Contact</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Goonie Software</title>
+  <meta name="description" content="Contact Goonie Software by email or Discord.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D6JW04E43S');
+  </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D6JW04E43S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D6JW04E43S');
-</script>
 <body>
-    <nav class="crumbs">
-        <img src="/imgs/SkullAndCrossBonesLogo.png" alt="Goonie Software"
-            style="display: inline-block; vertical-align: middle; height:15px; background: #000;" />
-        <ol style="display: inline-block; vertical-align: middle;">
-            <li class="crumb"><a href="/">Home</a></li>
-            <li class="crumb">
-                <a href="/games">Games</a>
-                <ul>
-                    <li><a href="/games/lifter">Lifter</a></li>
-                </ul>
-            </li>
-            <li class="crumb"><a href="/about">About</a></li>
-            <li class="crumb active"><a href="/contact">Contact</a></li>
-        </ol>
+  <header class="site-header">
+    <a class="site-logo" href="/">
+      <img src="/imgs/SkullAndCrossBonesLogo.png" alt="" width="28" height="28">
+      <span>Goonie Software</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <a href="/games">Games</a>
+        <ul>
+          <li><a href="/games/lifter">Lifter</a></li>
+        </ul>
+      </div>
+      <a href="/about">About</a>
+      <a href="/contact" aria-current="page">Contact</a>
     </nav>
-    <div class="center">
-        <header>
-            <img src="/imgs/logo.png" alt="Goonie Software" /> <br />
-            <img src="/imgs/SkullAndCrossBonesLogo.png" alt="Skull And Crossbones" width="250" />
-        </header>
-        <main>
-            <h1>Get In Touch With Us</h1>
-            <p> By Email:
-                <a href="mailto: gameinfo@gooniesoftware.com">
-                    gameinfo@gooniesoftware.com
-                </a>
-            </p>
-            <p> On Discord:
-                <a href="https://discord.gg/bT77wewvy4">
-                    <img src="/imgs/discord-mark-white.png" alt="discord" height="24px" width="32px"/>
-                </a>
-            </p>
-        </main>
-    </div>
-</body>
+  </header>
 
+  <div class="page-hero">
+    <div class="page-narrow">
+      <h1>Contact</h1>
+      <p>Press, partnership, or player questions — we’d love to hear from you.</p>
+    </div>
+  </div>
+
+  <main class="content">
+    <div class="page-narrow">
+      <ul class="contact-list">
+        <li>
+          <span class="label">Email</span>
+          <a href="mailto:gameinfo@gooniesoftware.com">gameinfo@gooniesoftware.com</a>
+        </li>
+        <li>
+          <span class="label">Discord</span>
+          <a href="https://discord.gg/bT77wewvy4">
+            <img src="/imgs/discord-mark-white.png" alt="" width="22" height="17">
+            Join the server
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="social">
+      <li>
+        <a href="https://discord.gg/bT77wewvy4" aria-label="Discord">
+          <img src="/imgs/discord-mark-white.png" alt="" width="24" height="18">
+        </a>
+      </li>
+    </ul>
+    <p>&copy; Goonie Software. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      var toggle = document.querySelector('.nav-toggle');
+      if (!header || !toggle) return;
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
 </html>
