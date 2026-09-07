@@ -233,7 +233,7 @@ async function buyClothes() {
     <label>Quantity<input name="qty" type="number" min="1" max="50" value="1" /></label>
   `);
   if (!data) return;
-  act({ action: "buyClothes", tier: data.tier, qty: data.qty });
+  act({ action: "buyClothes", tier: Number(data.tier), qty: Number(data.qty) });
 }
 
 async function buySupplies() {
