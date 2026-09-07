@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>steamdb — Goonie Software</title>
-  <meta name="description" content="steamdb is a terminal CLI that looks up Steam games and charts concurrent players over time.">
+  <title>Webgames — Goonie Software</title>
+  <meta name="description" content="Browser games from Goonie Software — PimpWars, Legend of the Red Dragon, and Solar Realms Elite.">
   <link rel="icon" href="/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
         </ul>
       </div>
       <div class="nav-dropdown">
-        <a href="/webgames">Webgames</a>
+        <a href="/webgames" aria-current="page">Webgames</a>
         <ul>
           <li><a href="/webgames/pimpwarz">PimpWars</a></li>
           <li><a href="/webgames/lord">Legend of the Red Dragon</a></li>
@@ -44,7 +44,7 @@
         </ul>
       </div>
       <div class="nav-dropdown">
-        <a href="/software" aria-current="page">Software</a>
+        <a href="/software">Software</a>
         <ul>
           <li><a href="/software/steamdb">steamdb</a></li>
         </ul>
@@ -54,34 +54,33 @@
     </nav>
   </header>
 
+  <div class="page-hero">
+    <div class="page">
+      <h1>Webgames</h1>
+      <p>Playable in the browser — no install required.</p>
+    </div>
+  </div>
+
   <main class="page">
-    <div class="game-layout">
-      <figure class="tool-shot">
-        <img src="/software/steamdb/imgs/Screenshot.png" alt="steamdb ASCII player chart in the terminal" width="634" height="532">
-      </figure>
-
-      <article class="game-body">
-        <span class="section-label">CLI Tool</span>
-        <h1>steamdb</h1>
-        <p>
-          A terminal CLI that looks up Steam games by name and draws an ASCII chart of
-          concurrent players over time. Search the Steam Store, read the live player count,
-          and plot history from SteamCharts — no API key required.
-        </p>
-
-        <h2>Key features</h2>
-        <ul class="feature-list">
-          <li>Search Steam by game name or jump straight to an AppID.</li>
-          <li>Live concurrent player counts from Steam’s Web API.</li>
-          <li>History windows from 24 hours to all-time, rendered as a Braille graph.</li>
-          <li>Optional color, legend, and non-interactive pick flags for scripting.</li>
-        </ul>
-
-        <div class="cta-row start steam-cta">
-          <a class="btn btn-primary" href="https://github.com/Goonie-Software/steamdb">View on GitHub</a>
-          <a class="btn btn-ghost" href="/software">All Software</a>
-        </div>
-      </article>
+    <div class="webgames-grid">
+      <a class="webgame-link" href="/webgames/pimpwarz">
+        <figure>
+          <img src="/webgames/imgs/pimpwarz-cover.png" alt="PimpWars" width="1024" height="1024">
+          <figcaption>PimpWars</figcaption>
+        </figure>
+      </a>
+      <a class="webgame-link" href="/webgames/lord">
+        <figure>
+          <img src="/webgames/imgs/lord-cover.png" alt="Legend of the Red Dragon" width="1024" height="1024">
+          <figcaption>Legend of the Red Dragon</figcaption>
+        </figure>
+      </a>
+      <a class="webgame-link" href="/webgames/solar_realms_elite">
+        <figure>
+          <img src="/webgames/imgs/sre-cover.png" alt="Solar Realms Elite" width="1024" height="1024">
+          <figcaption>Solar Realms Elite</figcaption>
+        </figure>
+      </a>
     </div>
   </main>
 

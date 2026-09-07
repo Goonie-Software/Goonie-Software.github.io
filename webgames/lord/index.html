@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legend of the Red Dragon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div id="boot" class="screen boot">
+    <pre class="boot-art" id="boot-art"></pre>
+    <form id="boot-form" class="boot-form">
+      <label>Enter handle:
+        <input id="player-name" maxlength="16" autocomplete="off" value="Warrior" />
+      </label>
+      <button type="button" id="btn-new" disabled>NEW GAME</button>
+      <button type="button" id="btn-continue" class="btn" disabled>CONTINUE</button>
+    </form>
+    <p class="boot-hint">Face the forest. Woo the inn. Slay the Red Dragon.</p>
+  </div>
+
+  <div id="app" class="screen app hidden">
+    <header class="top">
+      <div class="brand">
+        <span class="brand-mark">LORD</span>
+        <span class="brand-sub" id="day-clock">Day 1 · Town Square</span>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <main class="layout">
+      <section class="panel terminal" aria-label="Log">
+        <div class="panel-head">SYSTEM LOG</div>
+        <div id="log" class="log"></div>
+      </section>
+
+      <section class="panel menu" aria-label="Commands">
+        <div class="panel-head">MAIN MENU</div>
+        <div id="menu" class="menu-grid"></div>
+        <div id="panel-extra" class="extra hidden"></div>
+      </section>
+
+      <section class="panel gear" aria-label="Gear">
+        <div class="panel-head">GEAR</div>
+        <div id="gear" class="gear-body"></div>
+      </section>
+
+      <section class="panel location" aria-label="Location">
+        <div class="panel-head" id="location-head">LOCATION</div>
+        <div id="location" class="location-body"></div>
+      </section>
+
+      <section class="panel shop" aria-label="Shop">
+        <div class="panel-head">SHOP / DETAILS</div>
+        <div id="shop" class="shop-list"></div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal hidden" role="dialog">
+      <div class="modal-card">
+        <div class="panel-head" id="modal-title">ACTION</div>
+        <div id="modal-body"></div>
+        <div class="modal-actions">
+          <button type="button" id="modal-cancel" class="btn">Cancel</button>
+          <button type="button" id="modal-ok" class="btn primary">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="gameover" class="modal hidden">
+      <div class="modal-card end">
+        <div class="panel-head" id="end-title">VICTORY</div>
+        <p id="end-msg"></p>
+        <button type="button" id="restart" class="btn primary">TITLE SCREEN</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="wasm_exec.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PimpWars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div id="boot" class="screen boot">
+    <pre class="boot-art" id="boot-art"></pre>
+    <form id="boot-form" class="boot-form">
+      <label>Enter handle:
+        <input id="player-name" maxlength="16" autocomplete="off" value="Player" />
+      </label>
+      <button type="submit" id="btn-new">DIAL IN</button>
+      <button type="button" id="btn-continue" class="btn" disabled>CONTINUE</button>
+    </form>
+    <p class="boot-hint">Goal: $5,000,000 → Flaming Sheinen's</p>
+  </div>
+
+  <div id="app" class="screen app hidden">
+    <header class="top">
+      <div class="brand">
+        <span class="brand-mark">PIMPWARS</span>
+        <span class="brand-sub" id="day-clock">Day 1 · 8:00 AM</span>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <main class="layout">
+      <section class="panel terminal" aria-label="Log">
+        <div class="panel-head">SYSTEM LOG</div>
+        <div id="log" class="log"></div>
+      </section>
+
+      <section class="panel menu" aria-label="Commands">
+        <div class="panel-head">MAIN MENU</div>
+        <div id="menu" class="menu-grid"></div>
+        <div id="panel-extra" class="extra hidden"></div>
+      </section>
+
+      <section class="panel roster" aria-label="Workers">
+        <div class="panel-head">STABLE <span id="worker-count"></span></div>
+        <div id="workers" class="workers"></div>
+      </section>
+
+      <section class="panel streets" aria-label="Streets">
+        <div class="panel-head">CORNERS</div>
+        <div id="streets" class="streets-list"></div>
+      </section>
+
+      <section class="panel rivals" aria-label="Rivals">
+        <div class="panel-head">RIVALS</div>
+        <div id="rivals" class="rivals-list"></div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal hidden" role="dialog">
+      <div class="modal-card">
+        <div class="panel-head" id="modal-title">ACTION</div>
+        <div id="modal-body"></div>
+        <div class="modal-actions">
+          <button type="button" id="modal-cancel" class="btn">Cancel</button>
+          <button type="button" id="modal-ok" class="btn primary">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="gameover" class="modal hidden">
+      <div class="modal-card end">
+        <div class="panel-head" id="end-title">GAME OVER</div>
+        <p id="end-msg"></p>
+        <button type="button" id="restart" class="btn primary">NEW GAME</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="wasm_exec.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
